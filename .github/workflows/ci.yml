@@ -64,7 +64,7 @@ jobs:
       - name: Testinfra
         run: |
           mkdir -p reports
-          pytest tests/infra --hosts=local:// -p no:cacheprovider -q --junitxml=reports/junit-infra.xml 2>&1 | tail -n 20
+          pytest tests/infra --hosts=local:// --sudo -p no:cacheprovider -q --junitxml=reports/junit-infra.xml 2>&1 | tail -n 20
       - uses: actions/upload-artifact@v4
         if: always()
         with:

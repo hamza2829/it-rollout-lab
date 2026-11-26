@@ -1,0 +1,18 @@
+---
+- name: Install ufw
+  ansible.builtin.apt:
+    name: ufw
+    state: present
+
+- name: Allow configured ports
+  community.general.ufw:
+    rule: allow
+    port: "{{ item | string }}"
+    proto: tcp
+  loop: "{{ firewall_allowed_ports }}"
+
+- name: Deny incoming by default and enable ufw
+  community.general.ufw:
+    state: enabled
+    direction: incoming
+    policy: deny

@@ -1,0 +1,12 @@
+---
+- name: Configure Linux server
+  hosts: linux_servers
+  become: true
+  vars:
+    common_extra_packages: [rsync, logrotate]
+    firewall_allowed_ports: [22, 9100, 443]
+  roles:
+    - role: common
+    - role: ssh_hardening
+    - role: firewall
+    - role: monitoring_agent

@@ -1,0 +1,5 @@
+---
+common_admin_user: labadmin
+common_operator_user: operator01
+common_packages: [curl, vim, chrony, unattended-upgrades]
+common_extra_packages: []

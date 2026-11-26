@@ -1,0 +1,5 @@
+[
+ {"hostname":"WS-001","os":"Windows 11 23H2","status":"active","warranty_end":"2027-05-01","free_disk_gb":80,"last_backup":"2026-01-30","software":{"Endpoint Agent":"2.1.4","7-Zip":"24.8.0"}},
+ {"hostname":"WS-002","os":"Windows 11 23H2","status":"active","warranty_end":"2025-06-01","free_disk_gb":5,"last_backup":"2026-01-10","software":{"Endpoint Agent":"2.3.0","7-Zip":"23.1.0"}},
+ {"hostname":"WS-003","os":"Windows 11 23H2","status":"in_repair","warranty_end":"2028-01-01","free_disk_gb":120,"last_backup":"2026-02-01","software":{"Endpoint Agent":"2.3.0"}}
+]

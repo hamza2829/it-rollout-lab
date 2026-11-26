@@ -1,0 +1,94 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash -o pipefail {0}
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Pytest with coverage
+        run: |
+          mkdir -p reports
+          pytest -q --cov --cov-report=term --cov-report=xml:reports/coverage.xml --cov-fail-under=85 \
+            --junitxml=reports/junit-python.xml 2>&1 | tail -n 20
+      - name: Inventory and rollout simulation
+        run: |
+          python -m inventory.cli --db reports/inventory.db init
+          python -m inventory.cli --db reports/inventory.db --actor ci update WS-001 --set status=in_repair
+          python -m inventory.cli --db reports/inventory.db audit | tail -n 5
+          python -m inventory.cli --db reports/inventory.db export --format csv --out reports/inventory.csv
+          python -m rollout.plan --yaml inventory/devices.yaml --out reports/rollout --plan-out reports/rollout/rollout_plan.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: python-reports
+          path: reports/
+
+  ansible:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Install collections
+        working-directory: ansible
+        run: ansible-galaxy collection install -r requirements.yml 2>&1 | tail -n 5
+      - name: ansible-lint
+        working-directory: ansible
+        run: ansible-lint linux_workstation.yml linux_server.yml windows_workstation.yml 2>&1 | tail -n 20
+      - name: Syntax checks (Windows playbook uses a simulated host)
+        working-directory: ansible
+        run: |
+          ansible-playbook --syntax-check linux_workstation.yml linux_server.yml
+          ansible-playbook -i inventories/windows.ini --syntax-check windows_workstation.yml
+      - name: Run Linux playbooks on the runner
+        working-directory: ansible
+        run: |
+          ansible-playbook linux_workstation.yml 2>&1 | tail -n 20
+          ansible-playbook linux_server.yml 2>&1 | tail -n 20
+      - name: Idempotence check
+        working-directory: ansible
+        run: ansible-playbook linux_server.yml | tee ../idem.log | tail -n 5 && grep -q 'changed=0' ../idem.log
+      - name: Testinfra
+        run: |
+          mkdir -p reports
+          pytest tests/infra --hosts=local:// -p no:cacheprovider -q --junitxml=reports/junit-infra.xml 2>&1 | tail -n 20
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: infra-reports
+          path: reports/
+
+  powershell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pester tests (pwsh on Linux)
+        shell: pwsh
+        run: |
+          Install-Module Pester -MinimumVersion 5.5 -Force -Scope CurrentUser
+          New-Item -ItemType Directory -Force reports | Out-Null
+          $c = New-PesterConfiguration
+          $c.Run.Path = 'powershell/tests'
+          $c.Run.Exit = $true
+          $c.TestResult.Enabled = $true
+          $c.TestResult.OutputPath = 'reports/pester.xml'
+          $c.Output.Verbosity = 'Normal'
+          Invoke-Pester -Configuration $c
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pester-reports
+          path: reports/

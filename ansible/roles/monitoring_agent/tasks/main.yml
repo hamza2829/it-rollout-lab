@@ -1,0 +1,11 @@
+---
+- name: Install monitoring agent (Prometheus node exporter)
+  ansible.builtin.apt:
+    name: prometheus-node-exporter
+    state: present
+
+- name: Ensure monitoring agent is enabled and running
+  ansible.builtin.service:
+    name: prometheus-node-exporter
+    enabled: true
+    state: started

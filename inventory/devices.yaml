@@ -1,0 +1,792 @@
+devices:
+- hostname: WS-001
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1007919
+  os: Windows 11 23H2
+  owner: user01
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2026-05-14'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-002
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1015838
+  os: Windows 11 23H2
+  owner: user02
+  department: IT
+  location: IT Office
+  status: active
+  warranty_end: '2026-06-01'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-003
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1023757
+  os: Windows 11 23H2
+  owner: user03
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2028-03-12'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-004
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1031676
+  os: Ubuntu 22.04 LTS
+  owner: user04
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2028-03-26'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+- hostname: WS-005
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1039595
+  os: Windows 11 23H2
+  owner: user05
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2027-09-15'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-006
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1047514
+  os: Windows 11 23H2
+  owner: user06
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2027-02-02'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-007
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1055433
+  os: Windows 11 23H2
+  owner: user07
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2027-07-12'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-008
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1063352
+  os: Ubuntu 22.04 LTS
+  owner: user08
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2027-12-13'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+- hostname: WS-009
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1071271
+  os: Windows 11 23H2
+  owner: user09
+  department: IT
+  location: IT Office
+  status: active
+  warranty_end: '2028-10-16'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-010
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1079190
+  os: Windows 11 23H2
+  owner: user10
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2027-12-07'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-011
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1087109
+  os: Windows 11 23H2
+  owner: user11
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2027-09-06'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-012
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1095028
+  os: Ubuntu 22.04 LTS
+  owner: user12
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2028-12-28'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+- hostname: WS-013
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1102947
+  os: Windows 11 23H2
+  owner: user13
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2026-08-21'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-014
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1110866
+  os: Windows 11 23H2
+  owner: user14
+  department: IT
+  location: IT Office
+  status: active
+  warranty_end: '2028-08-16'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-015
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1118785
+  os: Windows 11 23H2
+  owner: user15
+  department: Production
+  location: Production Hall B
+  status: active
+  warranty_end: '2025-09-29'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.2.0
+    SAP GUI: 7.70.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-016
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1126704
+  os: Ubuntu 22.04 LTS
+  owner: user16
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2025-09-26'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+- hostname: WS-017
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1134623
+  os: Windows 11 23H2
+  owner: user17
+  department: Logistics
+  location: Warehouse
+  status: retired
+  warranty_end: '2025-12-30'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-018
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1142542
+  os: Windows 11 23H2
+  owner: user18
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2026-11-29'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-019
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1150461
+  os: Windows 11 23H2
+  owner: user19
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2028-02-15'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-020
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1158380
+  os: Ubuntu 22.04 LTS
+  owner: user20
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2026-08-17'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.2.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+- hostname: WS-021
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1166299
+  os: Windows 11 23H2
+  owner: user21
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2029-06-01'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-022
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1174218
+  os: Windows 11 23H2
+  owner: user22
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2025-04-27'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-023
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1182137
+  os: Windows 11 23H2
+  owner: user23
+  department: Production
+  location: Production Hall B
+  status: active
+  warranty_end: '2027-03-17'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-024
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1190056
+  os: Ubuntu 22.04 LTS
+  owner: user24
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2025-03-04'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+- hostname: WS-025
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1197975
+  os: Windows 11 23H2
+  owner: user25
+  department: Admin
+  location: Admin Building
+  status: in_repair
+  warranty_end: '2026-04-13'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-026
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1205894
+  os: Windows 11 23H2
+  owner: user26
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2029-05-01'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-027
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1213813
+  os: Windows 11 23H2
+  owner: user27
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2028-08-04'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-028
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1221732
+  os: Ubuntu 22.04 LTS
+  owner: user28
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2025-09-27'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+- hostname: WS-029
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1229651
+  os: Windows 11 23H2
+  owner: user29
+  department: Production
+  location: Production Hall B
+  status: active
+  warranty_end: '2029-06-12'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 7.70.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-030
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1237570
+  os: Windows 11 23H2
+  owner: user30
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2028-01-23'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-031
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1245489
+  os: Windows 11 23H2
+  owner: user31
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2029-07-07'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.16731
+- hostname: WS-032
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1253408
+  os: Ubuntu 22.04 LTS
+  owner: user32
+  department: QA
+  location: QA Lab
+  status: active
+  warranty_end: '2027-11-14'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+- hostname: WS-033
+  type: workstation
+  manufacturer: Dell
+  model: Latitude 5440
+  serial: DE1261327
+  os: Windows 11 23H2
+  owner: user33
+  department: Logistics
+  location: Warehouse
+  status: retired
+  warranty_end: '2025-07-08'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-034
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1269246
+  os: Windows 11 23H2
+  owner: user34
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2027-11-05'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-035
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1277165
+  os: Windows 11 23H2
+  owner: user35
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2027-09-03'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 7.70.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-036
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1285084
+  os: Ubuntu 22.04 LTS
+  owner: user36
+  department: Production
+  location: Production Hall B
+  status: active
+  warranty_end: '2025-11-06'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.3.1
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+- hostname: WS-037
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1293003
+  os: Windows 11 23H2
+  owner: user37
+  department: Admin
+  location: Admin Building
+  status: active
+  warranty_end: '2025-09-09'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    SAP GUI: 8.0.0
+    7-Zip: 24.8.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.16731
+- hostname: WS-038
+  type: workstation
+  manufacturer: Dell
+  model: OptiPlex 7010
+  serial: DE1300922
+  os: Windows 11 23H2
+  owner: user38
+  department: Production
+  location: Production Hall B
+  status: spare
+  warranty_end: '2027-07-11'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 23.8.0
+    Office Suite: 16.0.17928
+- hostname: WS-039
+  type: workstation
+  manufacturer: HP
+  model: EliteBook 840 G10
+  serial: HP1308841
+  os: Windows 11 23H2
+  owner: user39
+  department: Production
+  location: Production Hall A
+  status: active
+  warranty_end: '2027-01-08'
+  software:
+    Endpoint Agent: 2.3.0
+    LIMS Client: 4.2.0
+    SAP GUI: 8.0.0
+    7-Zip: 23.1.0
+    PDF Reader: 24.2.0
+    Office Suite: 16.0.17928
+- hostname: WS-040
+  type: workstation
+  manufacturer: Lenovo
+  model: ThinkPad T14 Gen 4
+  serial: LE1316760
+  os: Ubuntu 22.04 LTS
+  owner: user40
+  department: Logistics
+  location: Warehouse
+  status: active
+  warranty_end: '2026-09-08'
+  software:
+    Endpoint Agent: 2.1.4
+    LIMS Client: 4.3.1
+    7-Zip: 24.8.0
+    PDF Reader: 23.8.0
+- hostname: SRV-01
+  type: server
+  manufacturer: Dell
+  model: PowerEdge R650
+  serial: SV2104729
+  os: Ubuntu 22.04 LTS
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2027-01-16'
+  software:
+    Backup Agent: '12.1'
+    Node Exporter: 1.8.1
+  role: file
+- hostname: SRV-02
+  type: server
+  manufacturer: HPE
+  model: ProLiant DL380 Gen11
+  serial: SV2209458
+  os: Ubuntu 24.04 LTS
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2027-08-04'
+  software:
+    PostgreSQL: '16.2'
+    Backup Agent: '12.1'
+    Node Exporter: 1.7.0
+  role: lims-db
+- hostname: SRV-03
+  type: server
+  manufacturer: Dell
+  model: PowerEdge R650
+  serial: SV2314187
+  os: Ubuntu 24.04 LTS
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2028-02-20'
+  software:
+    Prometheus: 2.51.0
+    Node Exporter: 1.8.1
+  role: monitoring
+- hostname: SRV-04
+  type: server
+  manufacturer: HPE
+  model: ProLiant DL380 Gen11
+  serial: SV2418916
+  os: Ubuntu 22.04 LTS
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2028-09-07'
+  software:
+    Backup Server: '12.1'
+    Node Exporter: 1.7.0
+  role: backup
+- hostname: SRV-05
+  type: server
+  manufacturer: Dell
+  model: PowerEdge R650
+  serial: SV2523645
+  os: Windows Server 2022
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2029-03-26'
+  software:
+    Backup Agent: '11.0'
+    Endpoint Agent: 2.3.0
+  role: directory
+- hostname: SRV-06
+  type: server
+  manufacturer: HPE
+  model: ProLiant DL380 Gen11
+  serial: SV2628374
+  os: Windows Server 2022
+  owner: it-ops
+  department: IT
+  location: Server Room
+  status: active
+  warranty_end: '2029-10-12'
+  software:
+    Backup Agent: '12.1'
+    Endpoint Agent: 2.1.4
+  role: print

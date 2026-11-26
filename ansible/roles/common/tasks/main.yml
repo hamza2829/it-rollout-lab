@@ -1,0 +1,42 @@
+---
+- name: Install base packages
+  ansible.builtin.apt:
+    name: "{{ common_packages + common_extra_packages }}"
+    state: present
+    update_cache: true
+    cache_valid_time: 3600
+
+- name: Ensure lab groups exist
+  ansible.builtin.group:
+    name: "{{ item }}"
+    state: present
+  loop: [labadmins, laboperators]
+
+- name: Ensure admin user exists
+  ansible.builtin.user:
+    name: "{{ common_admin_user }}"
+    groups: [labadmins]
+    shell: /bin/bash
+    create_home: true
+
+- name: Ensure operator user exists
+  ansible.builtin.user:
+    name: "{{ common_operator_user }}"
+    groups: [laboperators]
+    shell: /bin/bash
+    create_home: true
+
+- name: Allow lab admins to use sudo
+  ansible.builtin.copy:
+    dest: /etc/sudoers.d/labadmins
+    content: "%labadmins ALL=(ALL) ALL\n"
+    mode: "0440"
+    validate: visudo -cf %s
+
+- name: Enable automatic security updates
+  ansible.builtin.copy:
+    dest: /etc/apt/apt.conf.d/20auto-upgrades
+    content: |
+      APT::Periodic::Update-Package-Lists "1";
+      APT::Periodic::Unattended-Upgrade "1";
+    mode: "0644"

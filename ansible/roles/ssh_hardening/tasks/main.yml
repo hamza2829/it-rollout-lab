@@ -4,6 +4,12 @@
     name: openssh-server
     state: present
 
+- name: Ensure sshd privilege separation directory exists
+  ansible.builtin.file:
+    path: /run/sshd
+    state: directory
+    mode: "0755"
+
 - name: Ensure sshd drop-in directory exists
   ansible.builtin.file:
     path: /etc/ssh/sshd_config.d

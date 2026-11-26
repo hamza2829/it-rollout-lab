@@ -114,6 +114,7 @@ def get_device(con, hostname):
 
 
 def add_device(con, dev, actor="system"):
+    dev = {**dev, "status": dev.get("status", "active")}
     for f in ("hostname", "type", "serial"):
         if not dev.get(f):
             raise InventoryError(f"missing required field {f}")

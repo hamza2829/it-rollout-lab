@@ -22,10 +22,13 @@ flowchart LR
 | Waves (pilot / early / rest) | 6 / 12 / 18 machines, all 3 waves go |
 | Configured / observed failure rate | 0.12 / 0.103 (seed 2026) |
 | Success / rollbacks / blocked | 27 / 2 / 7 (blocked = warranty expired) |
-| Python tests, coverage | measured in CI (gate 85 %) |
-| Testinfra, Pester | measured in CI |
+| Python pytest | 57 passed, 16 skipped (73 collected) |
+| Python line coverage | 98.54 % (85 % gate) |
+| Testinfra | 16 passed |
+| Pester | 14 passed |
+| ansible-lint | 11 files, 0 failures, 0 warnings (production profile passed) |
 
-The rollout numbers come from running the simulator with the default seed. Test counts and coverage are measured by the GitHub Actions run.
+The pytest run skips the 16 infra-marked cases unless run after the Ansible playbooks; the dedicated Testinfra job ran all 16 successfully. The results above were recorded from the successful GitHub Actions run [45817068449](https://github.com/hamza2829/it-rollout-lab/actions/runs/45817068449). The rollout numbers come from the simulator with the default seed.
 
 ## Run
 

@@ -31,7 +31,7 @@
       register: win_updates_result
 
     - name: Enable Windows firewall for all profiles
-      community.windows.win_firewall:
+      ansible.windows.win_firewall:
         state: enabled
         profiles: [Domain, Private, Public]
 
